@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registraion Form</h2>
+<br />
+
+@Html.Label("UserName")
+@Model.Name
+<br />
+
+@Html.Label("UserPhone")
+@Html.TextBox("UserPhone")
+<br />
+@Html.Label("UserEmail")
+@Html.TextBox("UserEmail")
+<br />
+@Html.Label("UserPassword")
+@Html.Password("UserPassword")
+<br />
+@Html.Label("M/F")
+@Html.RadioButton("M", new { value = "Male" })
+@Html.Label("F")
+@Html.RadioButton("F", new { value = "Female" })
+<br />
+@Html.Label("UserCountry")
+@Html.DropDownList("Data")
+<br />
+<p>Terms And Conditions</p>
+<br/>
+@Html.Label("I Agree")
+@Html.CheckBox("I agree")
+<br />
+
+<input type="submit" value="Submit" />
+
+<br />
